@@ -9,6 +9,16 @@ while (index < friends.length) {
   index++; // لو محطتهوش هنا هتخش في تكرار لا نهائي
 }
 
+// ================================================
+console.log("===> حل آخر");
+index = 0;
+counter = 0;
+
+while (friends.sort().reverse()[index][0] !== "A") {
+  console.log(`${++counter} => ${friends[index]}`);
+  index++;
+}
+
 /* Output
 1 => Sayed
 2 => Mahmoud
