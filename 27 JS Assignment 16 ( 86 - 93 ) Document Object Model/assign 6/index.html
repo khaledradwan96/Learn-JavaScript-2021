@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #ddd;
+        padding: 20px;
+        margin: auto;
+        width: 350px;
+        background-color: #eee;
+      }
+      form .input {
+        border: 1px solid #ddd;
+        outline: none;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 10px;
+      }
+      form input[type="submit"] {
+        background-color: #009084;
+        border: none;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+      }
+      .results {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .results div,
+      .results section {
+        padding: 10px 50px;
+        margin: 10px;
+        border-radius: 10px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      .results div {
+        background-color: #fc4a21;
+      }
+      .results section {
+        background-color: #0075ff;
+      }
+      .results div:hover,
+      .results section:hover {
+        background-color: green;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- التكليف السادس -->
+    <form action="">
+      <input
+        type="number"
+        name="elements"
+        class="input"
+        placeholder="Number Of Elements"
+      />
+      <input
+        type="text"
+        name="texts"
+        class="input"
+        placeholder="Elements Text"
+      />
+      <select name="type" class="input">
+        <option value="Div">Div</option>
+        <option value="Section">Section</option>
+      </select>
+      <input type="submit" name="create" value="Create" />
+    </form>
+    <div class="results"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
