@@ -1,0 +1,16 @@
+.checked {
+  background-color: rgb(35, 169, 110) !important;
+  color: black !important;
+}
+.checked span {
+  color: white !important;
+}
+.reset {
+  background-color: #3982ff;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
