@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Learn JavaScript</title>
+    <style>
+      /* التكليف 02 */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .assign {
+        text-align: center;
+        padding-top: 20px;
+      }
+      .assign input {
+        padding: 10px;
+        width: 300px;
+        border: 1px solid #ddd;
+      }
+      .assign input:focus {
+        outline: none;
+        border-color: #ccc;
+      }
+      .assign [title="Current"] {
+        padding: 20px;
+        margin: 10px auto;
+        width: 610px;
+        background-color: #f1f0f0;
+      }
+      .assign .classes-list {
+        padding: 20px;
+        margin: 10px auto;
+        width: 610px;
+        background-color: #f1f0f0;
+      }
+      .assign .classes-list h5 {
+        margin: 0 0 10px;
+        text-align: left;
+      }
+      .assign .classes-list div span {
+        background-color: #ff5722;
+        padding: 6px 10px 8px;
+        margin-right: 5px;
+        border-radius: 6px;
+        color: white;
+        display: inline-flex;
+      }
+    </style>
+    <script>
+      // التكليف 01
+      window.onload = function () {
+        for (let i = 0; i < document.links.length; i++) {
+          document.links[i].onclick = function (event) {
+            if (
+              document.links[i].classList.contains("open") &&
+              document.links[i].textContent === "Elzero"
+            ) {
+              console.log("True Link");
+            } else {
+              event.preventDefault();
+            }
+          };
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <!-- التكليف 01 -->
+    <a class="open" href="https://google.com">Google</a>
+    <a class="open" target="_blank" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+    <hr />
+
+    <!-- التكليف 02 -->
+    <div class="assign">
+      <input type="text" class="classes-to-add" placeholder="Add Classes" />
+      <input
+        type="text"
+        class="classes-to-remove"
+        placeholder="Remove Classes"
+      />
+      <div class="element current" title="Current">Current Element</div>
+      <div class="classes-list">
+        <h5>Current Element Class Lists</h5>
+        <div></div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- التكليف 03 -->
+    <div class="our-element">Our Element</div>
+    <p>Paragraph</p>
+    <hr />
+
+    <!-- التكليف 04 -->
+    <div>
+      <span>Hello</span>
+      <!-- We Need The Next Text Without Spaces -->
+      Elzero
+    </div>
+    <hr />
+
+    <!-- التكليف 05 -->
+    <div>Element</div>
+    <span>Element</span>
+    <p>Element</p>
+    <article>Element</article>
+    <section>Element</section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
