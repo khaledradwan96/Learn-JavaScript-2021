@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+  text-align: center;
+  text-decoration: underline;
+  color: #0075ff;
+  font-size: 25px;
+}
+.container {
+  width: 400px;
+  margin: 20px auto;
+}
+.form {
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  flex: 1;
+}
+.add {
+  border: none;
+  background-color: #0075ff;
+  color: white;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tasks {
+  background-color: #eee;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 6px;
+}
+.tasks .task {
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.tasks .task:not(:last-child) {
+  margin-bottom: 15px;
+}
+.tasks .task:hover {
+  background-color: #f7f7f7;
+}
+.tasks .task.done {
+  opacity: 0.5;
+}
+.tasks span {
+  font-size: 14px;
+  background-color: red;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
