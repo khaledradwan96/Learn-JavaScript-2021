@@ -1,4 +1,4 @@
-let chosen = 1;
+let chosen = 4;
 
 let myFriends = [
   { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
@@ -17,7 +17,7 @@ if (chosen === 1) {
   } = obj1;
   console.log(`Title is ${a}`);
   console.log(`Age is ${b}`);
-  console.log(c == true ? "Available" : "Not Available");
+  console.log(c ? "Available" : "Not Available");
   console.log(`last skills is ${d}`);
 } else if (chosen === 2) {
   const {
@@ -28,7 +28,7 @@ if (chosen === 1) {
   } = obj2;
   console.log(`Title is ${a}`);
   console.log(`Age is ${b}`);
-  console.log(c == true ? "Available" : "Not Available");
+  console.log(c ? "Available" : "Not Available");
   console.log(`last skills is ${d}`);
 } else if (chosen === 3) {
   const {
@@ -39,8 +39,8 @@ if (chosen === 1) {
   } = obj3;
   console.log(`Title is ${a}`);
   console.log(`Age is ${b}`);
-  console.log(c == true ? "Available" : "Not Available");
+  console.log(c ? "Available" : "Not Available");
   console.log(`last skills is ${d}`);
 } else {
-  console.log("Chossen Number is false");
+  console.log("Chosen Number is false");
 }
