@@ -40,7 +40,6 @@ getData("data.json")
 
       document.body.appendChild(div);
     });
-    document.body.appendChild(document.createElement("hr"));
   })
   .catch((rej) => console.log(rej));
 
