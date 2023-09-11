@@ -28,7 +28,10 @@ if ((st.length * 2).toString() === "34") {
 }
 
 // W Position May Change
-if (st.charAt(st.indexOf("W")).toLowerCase() === "w") {
+if (
+  st.charAt(st.indexOf("w")) === "w" ||
+  st.charAt(st.indexOf("W")).toLowerCase() === "w"
+) {
   console.log("Good 02");
 }
 

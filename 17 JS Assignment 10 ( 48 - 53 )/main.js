@@ -97,7 +97,6 @@ for (let i = start; i <= end; i++) {
 
 let index = 10;
 let jump = 2;
-end = 0;
 
 for (;;) {
   console.log(index);
@@ -128,7 +127,6 @@ for (let i = 0; i < friends.length; i++) {
     if (j < friends.length) break; // عشان ميحصلشي حلقة تكرار لا نهائية
   }
 }
-
 /* === */ console.log("===> التكليف 05 حل آخر <==="); /* === */
 let num = 1;
 for (let i = 0; i < friends.length; i++) {
@@ -140,17 +138,20 @@ for (let i = 0; i < friends.length; i++) {
 }
 
 /* === */ console.log("===> التكليف 05 حل آخر <==="); /* === */
-let newArray = [];
+let friendsTarget = [];
 for (let i = 0; i < friends.length; i++) {
-  if (friends[i].startsWith(letter.toUpperCase())) {
-    continue;
-  }
-  newArray.push(friends[i]);
+  if (friends[i][0] === letter.toUpperCase()) continue;
+  friendsTarget.push(friends[i]);
 } // حلقتي التكرار غير متداخلتين
-for (let j = 0; j < newArray.length; j++) {
-  console.log(`${j + 1} => ${newArray[j]}`);
+for (let j = 0; j < friendsTarget.length; j++) {
+  console.log(`${j + 1} => ${friendsTarget[j]}`);
 }
-
+/* === */ console.log("===>  التكليف 05 حل آخر ( أبسط حل ) <==="); /* === */
+j = 1;
+for (let i = 0; i < friends.length; i++) {
+  if (friends[i][0] === letter.toUpperCase()) continue;
+  console.log(`${j++} => ${friends[i]}`);
+}
 /* Output
 "1 => Sayed"
 "2 => Eman"
@@ -168,6 +169,8 @@ let result = [];
 for (let i = start; i < swappedName.length; i++) {
   if (swappedName[i] === swappedName[i].toLowerCase()) {
     result.push(swappedName[i].toUpperCase());
+    // لأن المتغير عبارة عن مصفوفة تم إستخدام push
+    // لإضافة الحرف
   } else {
     result.push(swappedName[i].toLowerCase());
   }
@@ -179,15 +182,12 @@ result = "";
 for (let i = start; i < swappedName.length; i++) {
   if (swappedName[i] === swappedName[i].toLowerCase()) {
     result += swappedName[i].toUpperCase();
+    // لأن المتغير عبارة عن نص تم إستخدام + لإضافة الحرف
   } else {
     result += swappedName[i].toLowerCase();
   }
 }
 console.log(result);
-
-/* Output
-"ELzERo"
-*/
 
 /* === */ console.log("===> التكليف 07 <==="); /* === */
 

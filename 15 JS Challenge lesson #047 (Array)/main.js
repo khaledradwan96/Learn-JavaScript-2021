@@ -17,7 +17,6 @@ console.log(my.slice([zero].length, counter).reverse());
 
 console.log(my[2].slice(0, 2) + my[1].slice(2)); // "Elzero"
 console.log([zero].length + [counter].length); // 2
-console.log(counter); // 2
 console.log(
   my[[zero].length + [counter].length].slice(
     zero,

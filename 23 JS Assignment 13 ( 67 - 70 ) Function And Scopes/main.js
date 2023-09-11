@@ -1,13 +1,9 @@
 /* === */ console.log("===> التكليف 01 <==="); /* === */
 
-country = "Egypt";
-theCountry = country[0].toUpperCase() + country[1].toUpperCase();
-// console.log(theCountry);
-
 function getDetails(zName, zAge, zCountry) {
   function namePattern(zName) {
-    fName = zName.split(" ")[0];
-    lName = zName.split(" ")[1][0].toUpperCase();
+    let fName = zName.split(" ")[0];
+    let lName = zName.split(" ")[1][0].toUpperCase();
     return `${fName} ${lName}.`;
   }
 
@@ -33,7 +29,7 @@ console.log(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
 console.log(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
 // Hello Ahmed A., Your Age Is 32, You Live In SY
 
-console.log(getDetails("Khaled Radean", "26 Is My Old", "egypt"));
+console.log(getDetails("Khaled Radwan", "26 Is My Old", "egypt"));
 // Hello Khaled R., Your Age Is 26, You Live In EG
 
 /* === */ console.log("===> التكليف 02 <==="); /* === */
@@ -51,7 +47,7 @@ console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
 function checker(zName) {
   return function (status) {
     return function (salary) {
-      return status === "Available" ? `${zName}, My Salary Is ${salary}` : `Iam Not Avaialble`;
+      return status === "Available" ? `${zName}, My Salary Is ${salary}` : `Iam Not Available`;
     };
   };
 }
@@ -61,7 +57,7 @@ function checker(zName) {
 let checker = (zName) => (status) => (salary) =>
   status === "Available"
     ? `${zName}, My Salary Is ${salary}`
-    : `Iam Not Avaialble`;
+    : `Iam Not Available`;
 
 console.log(checker("Osama")("Available")(4000)); // Osama, My Salary Is 4000
 console.log(checker("Ahmed")("Not Available")()); // Iam Not Avaialble
@@ -71,9 +67,7 @@ console.log(checker("Ahmed")("Not Available")()); // Iam Not Avaialble
 function specialMix(...data) {
   let result = 0;
   for (let i = 0; i < data.length; i++) {
-    if (isNaN(parseInt(data[i]))) {
-      continue;
-    }
+    if (isNaN(parseInt(data[i]))) continue;
     result += parseInt(data[i]);
   }
   result == 0 ? (result = "All Is Strings") : result;

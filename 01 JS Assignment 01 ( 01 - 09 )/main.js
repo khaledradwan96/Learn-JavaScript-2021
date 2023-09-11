@@ -6,6 +6,14 @@ document.querySelector("h1").style.fontWeight = "bold";
 document.querySelector("h1").style.textAlign = "center";
 document.querySelector("h1").style.fontFamily = "Arial";
 
+// حل آخر للتكليف الثاني أكثر تطوراً
+let el2 = document.body.appendChild(document.createElement("h1"));
+el2.appendChild(document.createTextNode("Elzero"));
+el2.style.cssText = `
+color: blue; font-size: 80px;
+font-weight: bold; text-align: center;
+font-family: Arial`;
+
 // التكليف الثالث
 console.log(
   "%cElzero %cWeb %cSchool",
@@ -27,9 +35,11 @@ console.log("Message Two");
 console.groupEnd();
 console.groupEnd();
 console.groupEnd();
+// we open 3 groups so we should close it
 console.group("Group 02");
 console.log("Message One");
 console.log("Message Two");
+console.groupEnd();
 
 // التكليف الخامس
 console.table(["Elzero", "Khaled", "Ahmad", "Sameh", "Gamal"]);

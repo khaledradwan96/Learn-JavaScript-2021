@@ -10,6 +10,13 @@ if (num < 10) {
   console.log(num);
 }
 
+// Answer with Short Code
+num < 10
+  ? console.log("00" + num)
+  : num >= 10 && num < 100
+  ? console.log("0" + num)
+  : console.log(num);
+
 /* ===== */ console.log("التكليف 02"); /* ===== */
 let num1 = 9;
 let str = "9";
